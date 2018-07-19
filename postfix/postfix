@@ -35,10 +35,10 @@ fi
 
 if [ ${module} == "queue" ]; then
 	if [ ${item} == "active" ]; then
-		postqueue -p | egrep -c "^[0-9A-F]{10}[*]"
+		postqueue -p | egrep -c "^[0-9A-F]{10,}[*]"
 	fi
 	if [ ${item} == "deferred" ]; then
-		postqueue -p | egrep -c "^[0-9A-F]{10}[^*]"
+		postqueue -p | egrep -c "^[0-9A-F]{10,}[^*]"
 	fi
 elif [ ${module} == "status" ]; then
 	status=("active" "deferred" "sent" "bounced" "expired")
