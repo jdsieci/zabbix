@@ -489,7 +489,7 @@
                     <description>Discovery of postfix log as defined in global regular expression &quot;Postfix code for discovery&quot;.</description>
                     <item_prototypes>
                         <item_prototype>
-                            <name>Postfix discovery item $1</name>
+                          <name>Delivered with $1 {#CODE}</name>
                             <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
